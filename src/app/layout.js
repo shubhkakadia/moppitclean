@@ -92,7 +92,7 @@ export default function RootLayout({ children }) {
     "logo": "https://moppitclean.com.au/moppit-logo-1.png",
     "image": "https://moppitclean.com.au/cleaning-illustration.jpg",
     "telephone": "+61-XXX-XXX-XXX",
-    "email": "info@moppitclean.com.au",
+    "email": "contact@moppitclean.com.au",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Brisbane",

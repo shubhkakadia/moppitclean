@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import emailjs from "@emailjs/browser";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function Footer() {
   const [isSubscribing, setIsSubscribing] = useState(false);
@@ -50,60 +51,125 @@ export default function Footer() {
   return (
     <footer className="mt-16 bg-secondary">
       <div className="h-1 w-full bg-gradient-to-r from-primary to-primary/35" />
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-zinc-700">
-          <div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 text-zinc-700">
+          {/* Company Info */}
+          <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="flex items-center gap-2">
-                <Link
-                  href="/"
-                  className="font-semibold text-lg text-primary items-center gap-2"
+              <Link href="/" className="font-semibold text-lg text-primary">
+                <Image
+                  src="/moppit-logo-1.png"
+                  alt="Moppit Clean - Professional Cleaning Services Brisbane"
+                  width={75}
+                  height={32}
+                />
+              </Link>
+            </div>
+            <p className="text-sm text-zinc-600 leading-6 mb-4">
+              Professional, eco-friendly cleaning services in Brisbane.
+              Licensed, insured, and satisfaction guaranteed. Serving
+              healthcare, educational, office, and fitness facilities.
+            </p>
+
+            {/* Contact Info */}
+            <div className="space-y-2 text-sm">
+              <div className="flex items-start gap-2">
+                <Phone className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                <div>
+                  <a
+                    href="tel:+61404616261"
+                    className="text-zinc-600 hover:text-primary transition-colors"
+                  >
+                    0404 616 261
+                  </a>
+                  <span className="text-zinc-500 text-xs block">
+                    Available 24/7
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-2">
+                <Mail className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                <a
+                  href="mailto:contact@moppitclean.com.au"
+                  className="text-zinc-600 hover:text-primary transition-colors"
                 >
-                  <Image
-                    src="/moppit-logo-1.png"
-                    alt="MoppitClean"
-                    width={75}
-                    height={32}
-                  />
-                </Link>
+                  contact@moppitclean.com.au
+                </a>
+              </div>
+
+              <div className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                <div className="text-zinc-600">
+                  1625 Old Cleveland Road
+                  <br />
+                  Chandler, Brisbane QLD 4155
+                </div>
               </div>
             </div>
-            <p className="text-sm text-zinc-600 leading-6 max-w-xs">
-              Premium, eco-friendly cleaning done right. Licensed, insured, and
-              satisfaction guaranteed.
-            </p>
           </div>
 
+          {/* Services */}
           <div>
-            <h4 className="text-xs uppercase tracking-wider text-zinc-500 mb-3 underline font-bold">
-              INDUSTRIES WE SERVE
+            <h4 className="text-xs uppercase tracking-wider text-zinc-500 mb-3 font-bold">
+              Our Services
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <div className="text-zinc-600 transition-colors hover:text-primary">
-                  HealthCare Centre Cleaning
-                </div>
+                <p className="text-zinc-600 transition-colors hover:text-primary">
+                  Healthcare Cleaning
+                </p>
               </li>
               <li>
-                <div className="text-zinc-600 transition-colors hover:text-primary">
-                  Educational Facilities Cleaning
-                </div>
+                <p className="text-zinc-600 transition-colors hover:text-primary">
+                  Educational Cleaning
+                </p>
               </li>
               <li>
-                <div className="text-zinc-600 transition-colors hover:text-primary">
+                <p className="text-zinc-600 transition-colors hover:text-primary">
                   Office Cleaning
-                </div>
+                </p>
               </li>
               <li>
-                <div className="text-zinc-600 transition-colors hover:text-primary">
-                  Physical &amp; Mental Fitness Centres Cleaning
-                </div>
+                <p className="text-zinc-600 transition-colors hover:text-primary">
+                  Fitness Centre Cleaning
+                </p>
+              </li>
+              <li>
+                <p className="text-zinc-600 transition-colors hover:text-primary">
+                  Window Cleaning
+                </p>
+              </li>
+              <li>
+                <p className="text-zinc-600 transition-colors hover:text-primary">
+                  Deep Cleaning
+                </p>
               </li>
             </ul>
           </div>
 
+          {/* Service Areas */}
           <div>
-            <h4 className="text-xs uppercase tracking-wider text-zinc-500 mb-3 underline font-bold">
+            <h4 className="text-xs uppercase tracking-wider text-zinc-500 mb-3 font-bold">
+              Areas We Serve
+            </h4>
+            <ul className="space-y-2 text-sm">
+              <li className="text-zinc-600">Brisbane CBD</li>
+              <li className="text-zinc-600">Chandler</li>
+              <li className="text-zinc-600">Carindale</li>
+              <li className="text-zinc-600">Mount Gravatt</li>
+              <li className="text-zinc-600">Springwood</li>
+              <li className="text-zinc-600">South Brisbane</li>
+              <li className="text-zinc-600">North Brisbane</li>
+              <li className="text-zinc-600">
+                <span className="text-primary">+ All Brisbane Suburbs</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company Links */}
+          <div>
+            <h4 className="text-xs uppercase tracking-wider text-zinc-500 mb-3 font-bold">
               Company
             </h4>
             <ul className="space-y-2 text-sm">
@@ -123,42 +189,29 @@ export default function Footer() {
                   Contact Us
                 </Link>
               </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-xs uppercase tracking-wider text-zinc-500 mb-3 underline font-bold">
-              Contact
-            </h4>
-            <ul className="space-y-2 text-sm text-zinc-600">
               <li>
-                Phone:{" "}
-                <a
-                  href="tel:+61404616261"
-                  className="text-primary hover:text-primary/80 transition-colors"
+                <Link
+                  href="/contactus"
+                  className="text-zinc-600 transition-colors hover:text-primary"
                 >
-                  +61 404 616 261
-                </a>
-              </li>
-              <li>
-                Email:{" "}
-                <a
-                  href="mailto:contact@moppitclean.com.au"
-                  className="text-primary hover:text-primary/80 transition-colors"
-                >
-                  contact@moppitclean.com.au
-                </a>
+                  Get Free Quote
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
+        {/* Newsletter Section */}
         <div className="mt-10 rounded-xl border border-zinc-200 bg-white/70 backdrop-blur p-4 sm:p-5">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <h5 className="text-sm font-medium text-zinc-800">
                 Get cleaning tips and exclusive offers
               </h5>
+              <p className="text-xs text-zinc-500 mt-1">
+                Join our Brisbane newsletter for industry insights and special
+                deals
+              </p>
             </div>
 
             {subscribed && (
@@ -184,11 +237,12 @@ export default function Footer() {
                   required
                   placeholder="Your email address"
                   className="w-full sm:w-72 h-10 rounded-md border border-zinc-300 px-3 text-sm placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-primary"
+                  aria-label="Email address for newsletter"
                 />
                 <button
                   type="submit"
                   disabled={isSubscribing}
-                  className="cursor-pointer h-10 px-4 rounded-md text-white text-sm font-medium shadow-sm bg-primary transition-colors hover:bg-primary/90 disabled:opacity-60"
+                  className="cursor-pointer h-10 px-4 rounded-md text-white text-sm font-medium shadow-sm bg-primary transition-colors hover:bg-primary/90 disabled:opacity-60 whitespace-nowrap"
                 >
                   {isSubscribing ? "Subscribing..." : "Subscribe"}
                 </button>
@@ -197,22 +251,30 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-between mt-8 pt-6 border-t border-zinc-200 text-sm text-zinc-600">
+        {/* Bottom Bar */}
+        <div className="flex flex-col sm:flex-row items-center justify-between mt-8 pt-6 border-t border-zinc-200 text-sm text-zinc-600 gap-2">
           <p>
-            © {new Date().getFullYear()} MoppitClean. MOPPIT CLEAN PTY. LTD. ABN
-            – 60688480202
+            © {new Date().getFullYear()} Moppit Clean. MOPPIT CLEAN PTY. LTD.
+            <br className="sm:hidden" />
+            <span className="sm:ml-1">ABN 60688480202</span>
           </p>
-          <p>
-            Developed by{" "}
-            <a
-              href="https://shubhkakadia.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:text-primary/80 transition-colors font-medium"
-            >
-              Shubh Kakadia
-            </a>
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+            <p className="text-xs text-zinc-500">
+              Brisbane's Trusted Cleaning Experts
+            </p>
+            <p className="hidden sm:block text-zinc-400">•</p>
+            <p>
+              Developed by{" "}
+              <a
+                href="https://shubhkakadia.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary/80 transition-colors font-medium"
+              >
+                Shubh Kakadia
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

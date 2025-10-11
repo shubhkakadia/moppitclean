@@ -1,0 +1,35 @@
+# robots.txt for Moppit Clean - https://moppitclean.com.au
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Disallow specific directories if needed (uncomment if you have these)
+# Disallow: /admin/
+# Disallow: /api/
+# Disallow: /_next/
+# Disallow: /private/
+
+# Sitemap location
+Sitemap: https://moppitclean.com.au/sitemap.xml
+
+# Crawl delay (optional - uncomment if you want to limit crawl rate)
+# Crawl-delay: 10
+
+# Specific rules for different search engines (optional)
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# Block bad bots (uncomment to block specific bots)
+# User-agent: BadBot
+# Disallow: /

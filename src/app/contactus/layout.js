@@ -1,10 +1,13 @@
+import { Metadata } from "next";
+
 export const metadata = {
-  title: "Contact Moppit Clean - Get Your Free Quote Today",
-  description: "Contact Moppit Clean for professional cleaning services in Brisbane. Get a free quote for healthcare, educational, office, or fitness center cleaning. We respond within 1 business day.",
-  keywords: "contact Moppit Clean, cleaning quote Brisbane, professional cleaning contact, healthcare cleaning quote, office cleaning Brisbane contact, educational facility cleaning quote, fitness center cleaning contact, cleaning services Brisbane quote",
+  title: "Contact Moppit Clean Brisbane | Free Cleaning Quote | Call 0404 616 261",
+  description:
+    "Get a free cleaning quote in Brisbane. Contact Moppit Clean for healthcare, office, school, and gym cleaning services. Available 24/7. Call 0404 616 261 or visit us in Chandler.",
   openGraph: {
-    title: "Contact Moppit Clean - Get Your Free Quote Today",
-    description: "Contact Moppit Clean for professional cleaning services in Brisbane. Get a free quote for healthcare, educational, office, or fitness center cleaning.",
+    title: "Contact Moppit Clean Brisbane | Free Cleaning Quote",
+    description:
+      "Get a free cleaning quote in Brisbane. Available 24/7 for healthcare, office, educational, and fitness center cleaning services.",
     url: "https://moppitclean.com.au/contactus",
     images: [
       {
@@ -17,8 +20,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Contact Moppit Clean - Get Your Free Quote Today",
-    description: "Contact Moppit Clean for professional cleaning services in Brisbane. Get a free quote for healthcare, educational, office, or fitness center cleaning.",
+    title: "Contact Moppit Clean Brisbane | Free Cleaning Quote",
+    description:
+      "Get a free cleaning quote in Brisbane. Available 24/7 for all cleaning services.",
     images: ["/cleaning-illustration.jpg"],
   },
   alternates: {
@@ -26,6 +30,8 @@ export const metadata = {
   },
 };
 
-export default function ContactLayout({ children }) {
+export default function ContactLayout({
+  children,
+}) {
   return children;
 }

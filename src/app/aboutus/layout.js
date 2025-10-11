@@ -1,10 +1,12 @@
+
 export const metadata = {
-  title: "About Moppit Clean - Brisbane's Trusted Cleaning Experts",
-  description: "Meet Akshay S., founder of Moppit Clean. Learn about our mission to deliver pristine spaces with specialized cleaning services for healthcare, educational, office, and fitness facilities in Brisbane.",
-  keywords: "about Moppit Clean, cleaning company Brisbane, Akshay S founder, healthcare cleaning Brisbane, educational facility cleaning, office cleaning Brisbane, fitness center cleaning, professional cleaning services Brisbane, cleaning company founder",
+  title: "About Moppit Clean Brisbane | Meet Our Founder | Professional Cleaning Services",
+  description:
+    "Meet Akshay S., founder of Moppit Clean. Brisbane's trusted cleaning experts specializing in healthcare, educational, office, and fitness facility cleaning. Police-checked staff, fully insured, 24/7 service.",
   openGraph: {
-    title: "About Moppit Clean - Brisbane's Trusted Cleaning Experts",
-    description: "Meet Akshay S., founder of Moppit Clean. Learn about our mission to deliver pristine spaces with specialized cleaning services for healthcare, educational, office, and fitness facilities in Brisbane.",
+    title: "About Moppit Clean Brisbane | Meet Our Founder",
+    description:
+      "Meet Akshay S., founder of Moppit Clean. Brisbane's trusted cleaning experts delivering pristine spaces with specialized services across all sectors.",
     url: "https://moppitclean.com.au/aboutus",
     images: [
       {
@@ -17,8 +19,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Moppit Clean - Brisbane's Trusted Cleaning Experts",
-    description: "Meet Akshay S., founder of Moppit Clean. Learn about our mission to deliver pristine spaces with specialized cleaning services.",
+    title: "About Moppit Clean Brisbane | Meet Our Founder",
+    description:
+      "Meet Akshay S., founder of Moppit Clean. Brisbane's trusted cleaning experts delivering pristine spaces.",
     images: ["/akshay.jpg"],
   },
   alternates: {
@@ -26,6 +29,9 @@ export const metadata = {
   },
 };
 
-export default function AboutLayout({ children }) {
+export default function AboutLayout({
+  children,
+
+}) {
   return children;
 }
