@@ -262,7 +262,7 @@ export default function Footer() {
             <p className="text-xs text-zinc-500">
               Brisbane's Trusted Cleaning Experts
             </p>
-            <p className="hidden sm:block text-zinc-400">•</p>
+            {/* <p className="hidden sm:block text-zinc-400">•</p>
             <p>
               Developed by{" "}
               <a
@@ -273,7 +273,7 @@ export default function Footer() {
               >
                 Shubh Kakadia
               </a>
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
