@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from 'next/script'
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +19,7 @@ export const metadata = {
     template: "%s | Moppit Clean"
   },
   description:
-    "Premium, eco-friendly cleaning services in Brisbane. Specialized in healthcare, educational, office, and fitness center cleaning. Licensed, insured, and satisfaction guaranteed.",
+    "Eco-friendly commercial cleaning in Brisbane for healthcare, schools, offices, and gyms. Licensed, insured, reliable.",
   keywords: "cleaning services Brisbane, professional cleaners Brisbane, healthcare cleaning, office cleaning, educational facility cleaning, fitness center cleaning, window cleaning, deep cleaning, commercial cleaning Brisbane, medical facility cleaning, school cleaning, gym cleaning, pressure washing, roof cleaning, solar panel cleaning",
   authors: [{ name: "Akshay S.", url: "https://moppitclean.com.au/aboutus" }],
   creator: "Moppit Clean",
@@ -37,7 +39,7 @@ export const metadata = {
     url: 'https://moppitclean.com.au',
     siteName: 'Moppit Clean',
     title: 'Moppit Clean - Professional Cleaning Services Brisbane',
-    description: 'Premium, eco-friendly cleaning services in Brisbane. Specialized in healthcare, educational, office, and fitness center cleaning.',
+    description: 'Eco-friendly commercial cleaning in Brisbane for healthcare, schools, offices, and gyms.',
     images: [
       {
         url: '/cleaning-illustration.jpg',
@@ -50,7 +52,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Moppit Clean - Professional Cleaning Services Brisbane',
-    description: 'Premium, eco-friendly cleaning services in Brisbane. Specialized in healthcare, educational, office, and fitness center cleaning.',
+    description: 'Eco-friendly commercial cleaning in Brisbane for healthcare, schools, offices, and gyms.',
     images: ['/cleaning-illustration.jpg'],
   },
   robots: {
@@ -87,7 +89,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Moppit Clean",
-    "description": "Premium, eco-friendly cleaning services in Brisbane. Specialized in healthcare, educational, office, and fitness center cleaning.",
+    "description": "Eco-friendly commercial cleaning in Brisbane for healthcare, schools, offices, and gyms.",
     "url": "https://moppitclean.com.au",
     "logo": "https://moppitclean.com.au/moppit-logo-1.png",
     "image": "https://moppitclean.com.au/cleaning-illustration.jpg",
@@ -110,7 +112,7 @@ export default function RootLayout({ children }) {
     },
     "serviceType": [
       "Healthcare Cleaning",
-      "Educational Facility Cleaning", 
+      "Educational Facility Cleaning",
       "Office Cleaning",
       "Fitness Center Cleaning",
       "Window Cleaning",
@@ -131,7 +133,7 @@ export default function RootLayout({ children }) {
           }
         },
         {
-          "@type": "Offer", 
+          "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
             "name": "Educational Facility Cleaning",
@@ -141,7 +143,7 @@ export default function RootLayout({ children }) {
         {
           "@type": "Offer",
           "itemOffered": {
-            "@type": "Service", 
+            "@type": "Service",
             "name": "Office Cleaning",
             "description": "Professional workspace cleaning for corporate environments"
           }
@@ -150,7 +152,7 @@ export default function RootLayout({ children }) {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Fitness Center Cleaning", 
+            "name": "Fitness Center Cleaning",
             "description": "Hygiene-focused cleaning for gyms and fitness facilities"
           }
         }
@@ -175,9 +177,28 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+
+        {/* Google Analytics */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-CQJZRHBXVJ"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CQJZRHBXVJ');
+            `,
+          }}
         />
       </head>
       <body

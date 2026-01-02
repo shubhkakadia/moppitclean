@@ -161,8 +161,13 @@ export default function Footer() {
               <li className="text-zinc-600">Springwood</li>
               <li className="text-zinc-600">South Brisbane</li>
               <li className="text-zinc-600">North Brisbane</li>
-              <li className="text-zinc-600">
-                <span className="text-primary">+ All Brisbane Suburbs</span>
+              <li>
+                <Link
+                  href="/coverage"
+                  className="text-primary transition-colors hover:text-primary/80"
+                >
+                  + All Brisbane Suburbs
+                </Link>
               </li>
             </ul>
           </div>
@@ -179,6 +184,14 @@ export default function Footer() {
                   className="text-zinc-600 transition-colors hover:text-primary"
                 >
                   About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/coverage"
+                  className="text-zinc-600 transition-colors hover:text-primary"
+                >
+                  Service Areas
                 </Link>
               </li>
               <li>
@@ -262,7 +275,7 @@ export default function Footer() {
             <p className="text-xs text-zinc-500">
               Brisbane's Trusted Cleaning Experts
             </p>
-            {/* <p className="hidden sm:block text-zinc-400">•</p>
+            <p className="hidden sm:block text-zinc-400">•</p>
             <p>
               Developed by{" "}
               <a
@@ -273,7 +286,7 @@ export default function Footer() {
               >
                 Shubh Kakadia
               </a>
-            </p> */}
+            </p>
           </div>
         </div>
       </div>

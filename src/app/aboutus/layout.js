@@ -2,11 +2,11 @@
 export const metadata = {
   title: "About Moppit Clean Brisbane | Meet Our Founder | Professional Cleaning Services",
   description:
-    "Meet Akshay S., founder of Moppit Clean. Brisbane's trusted cleaning experts specializing in healthcare, educational, office, and fitness facility cleaning. Police-checked staff, fully insured, 24/7 service.",
+    "Meet Akshay S. and Moppit Clean. Brisbane commercial cleaning for healthcare, schools, offices, and gyms. Licensed and insured.",
   openGraph: {
     title: "About Moppit Clean Brisbane | Meet Our Founder",
     description:
-      "Meet Akshay S., founder of Moppit Clean. Brisbane's trusted cleaning experts delivering pristine spaces with specialized services across all sectors.",
+      "Meet Akshay S., founder of Moppit Clean. Trusted Brisbane commercial cleaning.",
     url: "https://moppitclean.com.au/aboutus",
     images: [
       {
@@ -21,7 +21,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "About Moppit Clean Brisbane | Meet Our Founder",
     description:
-      "Meet Akshay S., founder of Moppit Clean. Brisbane's trusted cleaning experts delivering pristine spaces.",
+      "Meet Akshay S., founder of Moppit Clean in Brisbane.",
     images: ["/akshay.jpg"],
   },
   alternates: {

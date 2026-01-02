@@ -35,17 +35,17 @@ export default function ContactPage() {
       templateParams,
       process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
     )
-    .then((response) => {
-      console.log('Email sent successfully:', response.status, response.text);
-      setIsSubmitting(false);
-      setSubmitted(true);
-      event.target.reset();
-    })
-    .catch((error) => {
-      console.error('Error sending email:', error);
-      setIsSubmitting(false);
-      setError('Failed to send message. Please try again or contact us directly at 0404 616 261.');
-    });
+      .then((response) => {
+        console.log('Email sent successfully:', response.status, response.text);
+        setIsSubmitting(false);
+        setSubmitted(true);
+        event.target.reset();
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error);
+        setIsSubmitting(false);
+        setError('Failed to send message. Please try again or contact us directly at 0404 616 261.');
+      });
   }
 
   const contactPageStructuredData = {
@@ -162,7 +162,7 @@ export default function ContactPage() {
       <Navbar />
       <main>
         <section className="py-14 sm:py-20 bg-secondary">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="text-center">
               <h1 className="text-3xl sm:text-5xl font-semibold text-zinc-900 animate-slide-up">
                 Get Your Free Cleaning Quote in Brisbane
@@ -173,7 +173,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Info Cards */}
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <a
                 href="tel:+61404616261"
                 className="flex items-center gap-3 rounded-lg border border-primary/20 bg-white p-4 shadow-sm transition-all hover:shadow-md hover:border-primary animate-slide-up"
@@ -194,21 +194,11 @@ export default function ContactPage() {
                 <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                   <Mail className="h-5 w-5" />
                 </span>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs text-zinc-500 uppercase tracking-wide">Email Us</p>
-                  <p className="font-semibold text-zinc-900 text-sm">contact@moppitclean.com.au</p>
+                  <p className="font-semibold text-zinc-900 text-sm break-all">contact@moppitclean.com.au</p>
                 </div>
               </a>
-
-              <div className="flex items-center gap-3 rounded-lg border border-primary/20 bg-white p-4 shadow-sm animate-slide-up anim-delay-200">
-                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <MapPin className="h-5 w-5" />
-                </span>
-                <div>
-                  <p className="text-xs text-zinc-500 uppercase tracking-wide">Visit Us</p>
-                  <p className="font-semibold text-zinc-900 text-sm">Chandler, Brisbane</p>
-                </div>
-              </div>
 
               <div className="flex items-center gap-3 rounded-lg border border-primary/20 bg-white p-4 shadow-sm animate-slide-up anim-delay-300">
                 <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">

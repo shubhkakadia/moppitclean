@@ -26,7 +26,7 @@ export default function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center gap-8">
-          <Link
+            <Link
               href="/"
               className="transition-colors hover:text-primary"
             >
@@ -37,6 +37,12 @@ export default function Navbar() {
               className="transition-colors hover:text-primary"
             >
               About Us
+            </Link>
+            <Link
+              href="/coverage"
+              className="transition-colors hover:text-primary"
+            >
+              Service Areas
             </Link>
             <Link
               href="/contactus"
@@ -59,15 +65,13 @@ export default function Navbar() {
           >
             <span className="sr-only">Open main menu</span>
             <div className="relative w-6 h-6">
-              <Menu 
-                className={`absolute inset-0 w-6 h-6 transition-all duration-300 ease-in-out ${
-                  isOpen ? 'opacity-0 rotate-90 scale-75' : 'opacity-100 rotate-0 scale-100'
-                }`}
+              <Menu
+                className={`absolute inset-0 w-6 h-6 transition-all duration-300 ease-in-out ${isOpen ? 'opacity-0 rotate-90 scale-75' : 'opacity-100 rotate-0 scale-100'
+                  }`}
               />
-              <X 
-                className={`absolute inset-0 w-6 h-6 transition-all duration-300 ease-in-out ${
-                  isOpen ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-75'
-                }`}
+              <X
+                className={`absolute inset-0 w-6 h-6 transition-all duration-300 ease-in-out ${isOpen ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-75'
+                  }`}
               />
             </div>
           </button>
@@ -86,6 +90,12 @@ export default function Navbar() {
               className="block px-2 py-2 rounded hover:bg-zinc-100 transition-colors hover:text-primary"
             >
               About Us
+            </Link>
+            <Link
+              href="/coverage"
+              className="block px-2 py-2 rounded hover:bg-zinc-100 transition-colors hover:text-primary"
+            >
+              Service Areas
             </Link>
             <Link
               href="/contactus"

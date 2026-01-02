@@ -7,11 +7,11 @@ import { Check } from "lucide-react";
 export const metadata = {
   title: "Professional Cleaning Services Brisbane | Moppit Clean",
   description:
-    "Brisbane's trusted cleaning experts specializing in healthcare, educational, office, and fitness center cleaning. Licensed, insured, and satisfaction guaranteed. Available 24/7. Call 0404 616 261 for a free quote!",
+    "Brisbane cleaning experts for healthcare, schools, offices, and gyms. Licensed, insured, 24/7 support. Call 0404 616 261.",
   openGraph: {
     title: "Professional Cleaning Services Brisbane | Moppit Clean",
     description:
-      "Brisbane's trusted cleaning experts specializing in healthcare, educational, office, and fitness center cleaning. Licensed, insured, and satisfaction guaranteed.",
+      "Brisbane cleaning experts for healthcare, schools, offices, and gyms. Licensed and insured.",
     url: "https://moppitclean.com.au",
     images: [
       {
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Professional Cleaning Services Brisbane | Moppit Clean",
     description:
-      "Brisbane's trusted cleaning experts specializing in healthcare, educational, office, and fitness center cleaning.",
+      "Brisbane cleaning experts for healthcare, schools, offices, and gyms.",
     images: ["/cleaning-illustration.jpg"],
   },
   alternates: {
@@ -44,7 +44,7 @@ export default function Home() {
         "url": "https://moppitclean.com.au",
         "name": "Professional Cleaning Services Brisbane | Moppit Clean",
         "description":
-          "Brisbane's trusted cleaning experts specializing in healthcare, educational, office, and fitness center cleaning. Licensed, insured, and satisfaction guaranteed.",
+          "Brisbane cleaning experts for healthcare, schools, offices, and gyms. Licensed and insured.",
         "isPartOf": {
           "@id": "https://moppitclean.com.au#website",
         },
@@ -58,7 +58,7 @@ export default function Home() {
         "name": "Moppit Clean",
         "image": "https://moppitclean.com.au/cleaning-illustration.jpg",
         "description":
-          "Premium, eco-friendly cleaning services in Brisbane specializing in healthcare, educational, office, and fitness center cleaning.",
+          "Eco-friendly commercial cleaning in Brisbane for healthcare, schools, offices, and gyms.",
         "url": "https://moppitclean.com.au",
         "telephone": "+61404616261",
         "email": "contact@moppitclean.com.au",
@@ -262,7 +262,7 @@ export default function Home() {
                   Trusted Cleaning Experts
                 </h1>
                 <p className="mt-5 text-base sm:text-lg text-zinc-600 max-w-xl animate-fade-in anim-delay-100">
-                  Serving Chandler, Carindale, Mount Gravatt, and all Brisbane
+                  Serving all Brisbane
                   suburbs with effortless, reliable cleaning services that
                   always sparkle. Available 24/7 – call{" "}
                   <a
@@ -355,7 +355,7 @@ export default function Home() {
                 <div className="animate-scale-in">
                   <div className="relative rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm">
                     <Image
-                      src="/childcare-cleaning.jpeg"
+                      src="/education.png"
                       alt="Educational facilities cleaning Brisbane - school and childcare cleaning"
                       width={520}
                       height={360}
@@ -403,7 +403,7 @@ export default function Home() {
                 <div className="order-1 md:order-2 animate-scale-in">
                   <div className="relative rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm">
                     <Image
-                      src="/office-cleaning.jpeg"
+                      src="/office.png"
                       alt="Office cleaning Brisbane - commercial and corporate cleaning services"
                       width={520}
                       height={360}

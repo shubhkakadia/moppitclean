@@ -3,11 +3,11 @@ import { Metadata } from "next";
 export const metadata = {
   title: "Contact Moppit Clean Brisbane | Free Cleaning Quote | Call 0404 616 261",
   description:
-    "Get a free cleaning quote in Brisbane. Contact Moppit Clean for healthcare, office, school, and gym cleaning services. Available 24/7. Call 0404 616 261 or visit us in Chandler.",
+    "Get a free Brisbane cleaning quote. Healthcare, school, office, and gym cleaning with 24/7 support. Call 0404 616 261.",
   openGraph: {
     title: "Contact Moppit Clean Brisbane | Free Cleaning Quote",
     description:
-      "Get a free cleaning quote in Brisbane. Available 24/7 for healthcare, office, educational, and fitness center cleaning services.",
+      "Get a free Brisbane cleaning quote. 24/7 support for healthcare, office, school, and gym cleaning.",
     url: "https://moppitclean.com.au/contactus",
     images: [
       {
@@ -22,7 +22,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Contact Moppit Clean Brisbane | Free Cleaning Quote",
     description:
-      "Get a free cleaning quote in Brisbane. Available 24/7 for all cleaning services.",
+      "Get a free Brisbane cleaning quote. 24/7 support.",
     images: ["/cleaning-illustration.jpg"],
   },
   alternates: {
