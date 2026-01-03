@@ -6,7 +6,7 @@ const coverageSections = [
   {
     title: "Redland City Council (complete area)",
     description:
-      "Chandler borders Redland City, so almost all mainland suburbs in this council are within the standard 25km service radius.",
+      "Chandler borders Redland City, so almost all mainland suburbs in this council.",
     groups: [
       {
         name: "Suburbs",
@@ -37,7 +37,7 @@ const coverageSections = [
       },
     ],
     note:
-      "North Stradbroke Island (Dunwich) is at the edge of the 25km radius.",
+      "North Stradbroke Island (Dunwich).",
   },
   {
     title: "Brisbane City Council",
@@ -252,9 +252,9 @@ const coverageSections = [
     ],
   },
   {
-    title: "Edge cases (borderline 25km)",
+    title: "Edge cases",
     description:
-      "These suburbs are on the outer rim of the 25km radius. Coverage depends on the exact address.",
+      "These suburbs are on the outer rim. Coverage depends on the exact address.",
     groups: [
       {
         name: "Borderline coverage",
@@ -320,8 +320,7 @@ export default function CoveragePage() {
                 </h1>
                 <p className="mt-4 text-lg text-zinc-700">
                   Moppit Clean supports businesses across Brisbane, Redland City,
-                  and Logan. Coverage is based on a 25km radius from Chandler,
-                  QLD.
+                  and Logan.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a
@@ -349,17 +348,6 @@ export default function CoveragePage() {
                   </p>
                   <p className="mt-2 text-sm text-zinc-600">
                     Commercial cleaning across key council areas.
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">
-                  <p className="text-xs uppercase tracking-wide text-zinc-500">
-                    Radius
-                  </p>
-                  <p className="mt-2 text-xl font-semibold text-zinc-900">
-                    25km from Chandler
-                  </p>
-                  <p className="mt-2 text-sm text-zinc-600">
-                    Address-based confirmation available.
                   </p>
                 </div>
                 <div className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">

@@ -444,6 +444,29 @@ export default function Home() {
                   </p>
                 </div>
               </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div className="order-2 md:order-1 animate-slide-up">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-zinc-900">
+                    Professional Strata Cleaning Done Right
+                  </h3>
+                  <p className="mt-3 text-zinc-600 leading-7">
+                    At Moppit, our uniformed and trained team delivers consistent, high-quality cleaning for lobbies, stairwells, lifts, and common areas. We work closely with strata managers and committees to ensure reliable service and clear communication. Our focus is on safety, presentation, and long-term maintenance of your property.
+                  </p>
+                </div>
+                <div className="order-1 md:order-2 animate-scale-in">
+                  <div className="relative rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm">
+                    <Image
+                      src="/strata_cleaning.jpg"
+                      alt="Strata cleaning Brisbane - professional cleaning for lobbies, stairwells, lifts, and common areas"
+                      width={520}
+                      height={360}
+                      className="w-full h-auto rounded-lg"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Our USP Section */}
