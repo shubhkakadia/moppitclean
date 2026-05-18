@@ -802,7 +802,7 @@ export default function Home() {
                   ].map((logo) => (
                     <div
                       key={logo.alt}
-                      className="flex items-center justify-center transition-all duration-300 opacity-100 md:grayscale md:opacity-70 md:hover:grayscale-0 md:hover:opacity-100"
+                      className="flex items-center justify-center"
                     >
                       <Image
                         src={logo.src}
