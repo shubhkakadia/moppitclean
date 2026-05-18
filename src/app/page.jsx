@@ -41,44 +41,44 @@ export default function Home() {
       {
         "@type": "WebPage",
         "@id": "https://moppitclean.com.au#webpage",
-        "url": "https://moppitclean.com.au",
-        "name": "Professional Cleaning Services Brisbane | Moppit Clean",
-        "description":
+        url: "https://moppitclean.com.au",
+        name: "Professional Cleaning Services Brisbane | Moppit Clean",
+        description:
           "Brisbane cleaning experts for healthcare, schools, offices, and gyms. Licensed and insured.",
-        "isPartOf": {
+        isPartOf: {
           "@id": "https://moppitclean.com.au#website",
         },
-        "breadcrumb": {
+        breadcrumb: {
           "@id": "https://moppitclean.com.au#breadcrumb",
         },
       },
       {
         "@type": "LocalBusiness",
         "@id": "https://moppitclean.com.au#business",
-        "name": "Moppit Clean",
-        "image": "https://moppitclean.com.au/cleaning-illustration.jpg",
-        "description":
+        name: "Moppit Clean",
+        image: "https://moppitclean.com.au/cleaning-illustration.jpg",
+        description:
           "Eco-friendly commercial cleaning in Brisbane for healthcare, schools, offices, and gyms.",
-        "url": "https://moppitclean.com.au",
-        "telephone": "+61404616261",
-        "email": "contact@moppitclean.com.au",
-        "priceRange": "$$",
-        "address": {
+        url: "https://moppitclean.com.au",
+        telephone: "+61404616261",
+        email: "contact@moppitclean.com.au",
+        priceRange: "$$",
+        address: {
           "@type": "PostalAddress",
-          "streetAddress": "1625 Old Cleveland Road",
-          "addressLocality": "Chandler",
-          "addressRegion": "QLD",
-          "postalCode": "4155",
-          "addressCountry": "AU",
+          streetAddress: "1625 Old Cleveland Road",
+          addressLocality: "Chandler",
+          addressRegion: "QLD",
+          postalCode: "4155",
+          addressCountry: "AU",
         },
-        "geo": {
+        geo: {
           "@type": "GeoCoordinates",
-          "latitude": "-27.5158",
-          "longitude": "153.1478",
+          latitude: "-27.5158",
+          longitude: "153.1478",
         },
-        "openingHoursSpecification": {
+        openingHoursSpecification: {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
+          dayOfWeek: [
             "Monday",
             "Tuesday",
             "Wednesday",
@@ -87,93 +87,93 @@ export default function Home() {
             "Saturday",
             "Sunday",
           ],
-          "opens": "00:00",
-          "closes": "23:59",
+          opens: "00:00",
+          closes: "23:59",
         },
-        "areaServed": [
+        areaServed: [
           {
             "@type": "City",
-            "name": "Brisbane",
+            name: "Brisbane",
           },
           {
             "@type": "Place",
-            "name": "Chandler",
+            name: "Chandler",
           },
           {
             "@type": "Place",
-            "name": "Carindale",
+            name: "Carindale",
           },
           {
             "@type": "Place",
-            "name": "Mount Gravatt",
+            name: "Mount Gravatt",
           },
           {
             "@type": "Place",
-            "name": "Springwood",
+            name: "Springwood",
           },
         ],
-        "aggregateRating": {
+        aggregateRating: {
           "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "47",
-          "bestRating": "5",
-          "worstRating": "1",
+          ratingValue: "4.9",
+          reviewCount: "47",
+          bestRating: "5",
+          worstRating: "1",
         },
-        "hasOfferCatalog": {
+        hasOfferCatalog: {
           "@type": "OfferCatalog",
-          "name": "Cleaning Services",
-          "itemListElement": [
+          name: "Cleaning Services",
+          itemListElement: [
             {
               "@type": "Offer",
-              "itemOffered": {
+              itemOffered: {
                 "@type": "Service",
-                "name": "Healthcare Cleaning",
-                "description":
+                name: "Healthcare Cleaning",
+                description:
                   "Specialized cleaning for hospitals, clinics, and medical centers with infection control compliance.",
               },
             },
             {
               "@type": "Offer",
-              "itemOffered": {
+              itemOffered: {
                 "@type": "Service",
-                "name": "Educational Facility Cleaning",
-                "description":
+                name: "Educational Facility Cleaning",
+                description:
                   "Comprehensive cleaning for schools, universities, and childcare centers.",
               },
             },
             {
               "@type": "Offer",
-              "itemOffered": {
+              itemOffered: {
                 "@type": "Service",
-                "name": "Office Cleaning",
-                "description":
+                name: "Office Cleaning",
+                description:
                   "Professional office cleaning services for corporate and commercial spaces.",
               },
             },
             {
               "@type": "Offer",
-              "itemOffered": {
+              itemOffered: {
                 "@type": "Service",
-                "name": "Fitness Center Cleaning",
-                "description":
+                name: "Fitness Center Cleaning",
+                description:
                   "Specialized cleaning for gyms, yoga studios, and fitness facilities.",
               },
             },
             {
               "@type": "Offer",
-              "itemOffered": {
+              itemOffered: {
                 "@type": "Service",
-                "name": "Window Cleaning",
-                "description":
+                name: "Window Cleaning",
+                description:
                   "Crystal-clear window cleaning for residential and commercial properties.",
               },
             },
             {
               "@type": "Offer",
-              "itemOffered": {
+              itemOffered: {
                 "@type": "Service",
-                "name": "Pressure Washing",
-                "description":
+                name: "Pressure Washing",
+                description:
                   "High-pressure cleaning for concrete, pavers, and exterior surfaces.",
               },
             },
@@ -183,56 +183,56 @@ export default function Home() {
       {
         "@type": "BreadcrumbList",
         "@id": "https://moppitclean.com.au#breadcrumb",
-        "itemListElement": [
+        itemListElement: [
           {
             "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://moppitclean.com.au",
+            position: 1,
+            name: "Home",
+            item: "https://moppitclean.com.au",
           },
         ],
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
+        mainEntity: [
           {
             "@type": "Question",
-            "name": "What areas of Brisbane do you service?",
-            "acceptedAnswer": {
+            name: "What areas of Brisbane do you service?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "We service all Brisbane suburbs including Chandler, Carindale, Mount Gravatt, Springwood, CBD, North Brisbane, South Brisbane, and surrounding areas across the greater Brisbane region.",
+              text: "We service all Brisbane suburbs including Chandler, Carindale, Mount Gravatt, Springwood, CBD, North Brisbane, South Brisbane, and surrounding areas across the greater Brisbane region.",
             },
           },
           {
             "@type": "Question",
-            "name": "Are you available for emergency cleaning services?",
-            "acceptedAnswer": {
+            name: "Are you available for emergency cleaning services?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Yes, we are available 24/7 for emergency cleaning services. Contact us at 0404 616 261 anytime for immediate assistance.",
+              text: "Yes, we are available 24/7 for emergency cleaning services. Contact us at 0404 616 261 anytime for immediate assistance.",
             },
           },
           {
             "@type": "Question",
-            "name": "Do you provide cleaning services for healthcare facilities?",
-            "acceptedAnswer": {
+            name: "Do you provide cleaning services for healthcare facilities?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Yes, we specialize in healthcare cleaning with full compliance to infection control standards. We service hospitals, clinics, medical centers, and aged care facilities throughout Brisbane.",
+              text: "Yes, we specialize in healthcare cleaning with full compliance to infection control standards. We service hospitals, clinics, medical centers, and aged care facilities throughout Brisbane.",
             },
           },
           {
             "@type": "Question",
-            "name": "Are your cleaners police checked and insured?",
-            "acceptedAnswer": {
+            name: "Are your cleaners police checked and insured?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "Absolutely. All our staff are police checked and we carry full public liability insurance for your peace of mind and compliance requirements.",
+              text: "Absolutely. All our staff are police checked and we carry full public liability insurance for your peace of mind and compliance requirements.",
             },
           },
           {
             "@type": "Question",
-            "name": "How quickly can you resolve cleaning complaints?",
-            "acceptedAnswer": {
+            name: "How quickly can you resolve cleaning complaints?",
+            acceptedAnswer: {
               "@type": "Answer",
-              "text": "We guarantee complaint resolution within 48 hours, ensuring fast, accountable support with minimal disruption to your operations.",
+              text: "We guarantee complaint resolution within 48 hours, ensuring fast, accountable support with minimal disruption to your operations.",
             },
           },
         ],
@@ -262,9 +262,8 @@ export default function Home() {
                   Trusted Cleaning Experts
                 </h1>
                 <p className="mt-5 text-base sm:text-lg text-zinc-600 max-w-xl animate-fade-in anim-delay-100">
-                  Serving all Brisbane
-                  suburbs with effortless, reliable cleaning services that
-                  always sparkle. Available 24/7 – call{" "}
+                  Serving all Brisbane suburbs with effortless, reliable
+                  cleaning services that always sparkle. Available 24/7 – call{" "}
                   <a
                     href="tel:+61404616261"
                     className="text-primary font-medium hover:underline"
@@ -451,7 +450,12 @@ export default function Home() {
                     Professional Strata Cleaning Done Right
                   </h3>
                   <p className="mt-3 text-zinc-600 leading-7">
-                    At Moppit, our uniformed and trained team delivers consistent, high-quality cleaning for lobbies, stairwells, lifts, and common areas. We work closely with strata managers and committees to ensure reliable service and clear communication. Our focus is on safety, presentation, and long-term maintenance of your property.
+                    At Moppit, our uniformed and trained team delivers
+                    consistent, high-quality cleaning for lobbies, stairwells,
+                    lifts, and common areas. We work closely with strata
+                    managers and committees to ensure reliable service and clear
+                    communication. Our focus is on safety, presentation, and
+                    long-term maintenance of your property.
                   </p>
                 </div>
                 <div className="order-1 md:order-2 animate-scale-in">
@@ -763,6 +767,52 @@ export default function Home() {
                     Deep steam cleaning for all floor types, removing dirt and
                     sanitising without harsh chemicals.
                   </p>
+                </div>
+              </div>
+
+              {/* Our Clients Section */}
+              <div className="mt-20">
+                <div className="text-center mb-10">
+                  <h2 className="text-2xl sm:text-3xl font-semibold text-zinc-900 animate-slide-up">
+                    Our Clients
+                  </h2>
+                  <p className="mt-2 text-zinc-500 animate-fade-in anim-delay-100">
+                    Trusted by businesses across Brisbane
+                  </p>
+                </div>
+                <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+                  {[
+                    {
+                      src: "/Eden+Logo.webp",
+                      alt: "Eden Academy Childcare & Kindergarten",
+                    },
+                    {
+                      src: "/ChatGPT Image May 18, 2026, 09_29_57 PM.png",
+                      alt: "Yatala Construction",
+                    },
+                    {
+                      src: "/Gemini_Generated_Image_4iy99r4iy99r4iy9.png",
+                      alt: "TAM Accountants",
+                    },
+                    {
+                      src: "/107368f2-e58f-5005-b4ce-229acb542c73.webp",
+                      alt: "Red Rooster",
+                    },
+                    { src: "/2023-11-08.webp", alt: "JD Security" },
+                  ].map((logo) => (
+                    <div
+                      key={logo.alt}
+                      className="flex items-center justify-center transition-all duration-300 opacity-100 md:grayscale md:opacity-70 md:hover:grayscale-0 md:hover:opacity-100"
+                    >
+                      <Image
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={160}
+                        height={60}
+                        className="object-contain h-12 w-auto"
+                      />
+                    </div>
+                  ))}
                 </div>
               </div>
 
